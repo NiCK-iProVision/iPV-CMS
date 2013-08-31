@@ -1,0 +1,80 @@
+body {
+font-family: arial;
+font-size: 12px;
+background-color: #d7d7d7;
+background-image:url(bg.png);
+background-repeat: repeat-x;     
+     }
+
+@font-face { 
+  font-family: 'batman';
+  src: url('batmfa_.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mlogo {
+text-shadow: 3px 3px 10px #000;
+font-family:batman;
+position: fixed; 
+top: 0px; 
+left: 0px; 
+right: 0px; 
+bottom: 0px; 
+width: 100%; 
+height: 100%; 
+background: #222;       
+       }
+.pad1 {
+padding-left: 817px; 
+position: relative; 
+top: 30px;
+font-size: 10px; 
+color: white;      
+      }  
+.pad2 {
+padding-left: 397px; 
+position: relative; 
+top: -30px;
+font-size: 30px; 
+color: white;     
+      }
+.cr {
+font-family: arial;
+color: white;
+position: fixed; 
+bottom: 5px; 
+right: 5px;    
+    }  
+.ltext {
+font-size: 150px; 
+font-weight: bold; 
+color: white;       
+       } 
+.bc {
+color: #4163b8;   
+    } 
+.tlacitko {
+color: black;
+border: 1px solid #999;
+padding-right: 7px;
+padding-left: 7px;
+background: #ccc;       
+          } 
+.aktivni {
+color: #4163b8;         
+         }       
+.bold {
+ font-weight: bold;     
+      }     
+.tabulka {   
+background-color: #e8e8e8;
+border: 1px solid #777;
+padding: 10px;   
+ } 
+.batman  { 
+font-family: batman; 
+ }
+.fs20  { 
+ font-size: 20px;
+  }              
