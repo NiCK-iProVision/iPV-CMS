@@ -34,7 +34,7 @@ $datum = StrFTime("%d/%m/%Y %H:%M:%S", Time());
 mysql_query("SET character_set_client=utf8");
 mysql_query("SET character_set_connection=utf8");
 mysql_query("SET character_set_results=utf8");
-$name=$_SERVER['SERVER_NAME'];
+$name=$_SERVER['HTTP_HOST'];
 $url="http://$name/";
 mysql_query("INSERT INTO `hlavni` (`nazev`, `popis`, `url`, `logo`, `klic_slova`, `autor`, `vzhled`, `mail`, `jazyk`) values ('".$_POST["nazev"]."', '".$_POST["popis"]."', '$url', '".$url."admin/logo.png', '".$_POST["keywords"]."', '".$_POST["autor"]."', 'ipv', '".$_POST["mail"]."', '".$_SESSION["jazyk"]."')",$mysql_pripojeni);
 mysql_query("INSERT INTO `novinky` (`nazev`, `popis`, `text`, `cas`, `pridal`) values ('iProVision CMS', '<p align=center>".$jazyk["web_474"]."<br /><br />".$jazyk["web_475"]."</p>', '<p align=center>".$jazyk["web_474"]."<br /><br />".$jazyk["web_475"]."</p>', '".$datum."', 'iProVision CMS')",$mysql_pripojeni);
